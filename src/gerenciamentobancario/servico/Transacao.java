@@ -55,7 +55,7 @@ public class Transacao {
         System.out.println("Qual conta será utilizada para o saque?");
         int escolhaDaConta = Integer.parseInt(scanner.nextLine());
 
-        if (escolhaDaConta < 0 || escolhaDaConta > contasDoCliente.size()) {
+        if (escolhaDaConta <= 0 || escolhaDaConta > contasDoCliente.size()) {
             return null;
         }
 
@@ -68,7 +68,7 @@ public class Transacao {
         System.out.println("Qual conta será utilizada para o deposito?");
         int escolhaDaConta = Integer.parseInt(scanner.nextLine());
 
-        if (escolhaDaConta < 0 || escolhaDaConta > contasDoCliente.size()) {
+        if (escolhaDaConta <= 0 || escolhaDaConta > contasDoCliente.size()) {
             return null;
         }
 
@@ -83,7 +83,7 @@ public class Transacao {
         System.out.println("Escolha a conta que ira fazer o pagamento");
         int escolhaDoPagador = Integer.parseInt(scanner.nextLine());
 
-        if (escolhaDoPagador < 0 || escolhaDoPagador > contasDoCliente.size()) {
+        if (escolhaDoPagador <= 0 || escolhaDoPagador > contasDoCliente.size()) {
             return null;
         }
 
@@ -98,7 +98,7 @@ public class Transacao {
         System.out.println("Escolha a conta que ira receber");
         int escolhaDoRecebedor = Integer.parseInt(scanner.nextLine());
 
-        if (escolhaDoRecebedor < 0 || escolhaDoRecebedor > contasDoCliente.size()) {
+        if (escolhaDoRecebedor <= 0 || escolhaDoRecebedor > contasDoCliente.size()) {
             return null;
         }
 
